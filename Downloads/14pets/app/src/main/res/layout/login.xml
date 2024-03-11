@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_brown"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <ImageView
+            android:id="@+id/IV_logo"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            app:srcCompat="@drawable/logo_wp6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="343dp"
+        android:layout_height="179dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="241dp">
+
+        <EditText
+            android:id="@+id/ET_Email"
+            android:layout_width="330dp"
+            android:layout_height="53dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/editext_signup_background"
+            android:ems="10"
+            android:hint="@string/enter_email_to_login"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColorHint="@color/dark_brown" />
+
+        <EditText
+            android:id="@+id/ET_Password"
+            android:layout_width="330dp"
+            android:layout_height="53dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/editext_signup_background"
+            android:ems="10"
+            android:hint="@string/enter_password_to_login"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColorHint="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_forgot_pw"
+            android:layout_width="135dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginEnd="36dp"
+            android:text="@string/forgot_password_link"
+            android:textColor="@color/yellow"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TV_welcome"
+        android:layout_width="167dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/welcome_message"
+        android:textColor="@color/dark_brown"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Btn_login"
+        android:layout_width="147dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/signup_button_background"
+        android:text="@string/login_button"
+        android:textAlignment="center"
+        android:textColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/Btn_google_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:background="@drawable/editext_signup_background"
+        android:padding="16dp"
+        android:text="@string/sign_with_google_account_button"
+        android:textColor="@color/dark_brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/IV_bone_icon2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/IV_bone_icon1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="636dp" />
+
+    <ImageView
+        android:id="@+id/IV_bone_icon1"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:rotation="90"
+        app:srcCompat="@drawable/bone_icon2"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="636dp" />
+
+    <ImageView
+        android:id="@+id/IV_bone_icon2"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:rotation="180"
+        app:srcCompat="@drawable/bone_icon2"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="636dp" />
+
+    <ImageView
+        android:id="@+id/IV_bone_icon3"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:rotation="180"
+        app:srcCompat="@drawable/bone_icon2"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <ImageView
+        android:id="@+id/IV_bone_icon4"
+        android:layout_width="85dp"
+        android:layout_height="93dp"
+        android:rotation="270"
+        app:srcCompat="@drawable/bone_icon2"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <TextView
+        android:id="@+id/TV_no_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dont_have_account_message"
+        android:textColor="@color/dark_brown"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="512dp" />
+
+    <TextView
+        android:id="@+id/TV_continue_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_with_google"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="589dp" />
+
+    <TextView
+        android:id="@+id/TV_Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="539dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

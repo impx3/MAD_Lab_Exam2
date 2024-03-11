@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/LLH_navigation_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TV_view_profiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/view_profiles_title"
+            android:textAlignment="center"
+            android:textColor="@color/dark_brown"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <LinearLayout
+            android:id="@+id/LLH_view_profiles1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/LLH_view_profiles_names1"
+            app:layout_constraintTop_toBottomOf="@+id/TV_view_profiles"
+            app:layout_constraintVertical_bias="0.281"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_viewprofile1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="200dp">
+
+                <ImageView
+                    android:id="@+id/IV_viewprofile1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/german_shepherd" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_viewprofile2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/border"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="200dp">
+
+                <ImageView
+                    android:id="@+id/IV_viewprofile2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/retriever2" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLH_view_profiles_names1"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="243dp">
+
+            <TextView
+                android:id="@+id/TV_viewprofile1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:text="@string/add_friend_dog_name1"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TV_viewprofile2_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:text="@string/add_friend_dog_name2"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLH_view_profiles2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/LLH_view_profiles_names1"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_viewprofile3"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="200dp">
+
+                <ImageView
+                    android:id="@+id/IV_view_profile3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/shetland_sheepdog" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_viewprofile4"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/border"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="200dp">
+
+                <ImageView
+                    android:id="@+id/IV_viewprofile4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dog1" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLH_view_profiles_names2"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/LLH_view_profiles2"
+            tools:layout_editor_absoluteX="1dp">
+
+            <TextView
+                android:id="@+id/TV_viewprofile3_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="62dp"
+                android:text="@string/add_friend_dog_name3"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TV_viewprofile4_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="142dp"
+                android:text="@string/add_friend_dog_name4"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLH_view_profiles3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_viewprofile5"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/border"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="200dp">
+
+                <ImageView
+                    android:id="@+id/IV_view_profile5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dog3" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_viewprofile6"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/border"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="200dp">
+
+                <ImageView
+                    android:id="@+id/IV_viewprofile6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/dog4" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLH_view_profiles_names3"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/LLH_view_profiles3"
+            tools:layout_editor_absoluteX="1dp">
+
+            <TextView
+                android:id="@+id/TV_viewprofile5_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="62dp"
+                android:text="@string/add_friend_dog_name5"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/TV_viewprofile6_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:text="@string/add_friend_dog_name6"
+                android:textColor="@color/dark_brown"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Btn_my_friends"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/signup_button_background"
+            android:text="@string/my_friends_button"
+            android:textAlignment="center"
+            android:textColor="@color/yellow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLH_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/profilebar_brown"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="630dp">
+
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/home_brown" />
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_friends"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/friends_brown" />
+
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_reminders"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/reminders_brown" />
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/dogprofile_brown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLH_navigation_bar_names"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/light_brown"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLH_navigation_bar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_home"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:text="@string/navigation_icon_home"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_friends"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="@string/navigation_icon_friends"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_reminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="@string/navigation_icon_reminders"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_profile"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="@string/navigation_icon_profile"
+            android:textColor="@color/dark_brown" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

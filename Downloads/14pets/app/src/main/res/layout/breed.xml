@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp2"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/SV_select_breed"
+        android:layout_width="match_parent"
+        android:layout_height="631dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TV_select_breed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="78dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/select_dog_breed"
+                android:textAlignment="center"
+                android:textColor="@color/dark_brown"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/LHH_search_breed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/searchbar"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="3dp"
+                    app:srcCompat="@drawable/search" />
+
+                <TextView
+                    android:id="@+id/TV_search_breed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/search_dog_breed"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_brown"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLH_dogbreed1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/beagle_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/border_collie_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/pug_icon" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLH_dogbreed2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/pembroke_welsh_corgi_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/yorkshire_terrier_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/samoyed_icon" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLH_dogbreed3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/shiba_inu_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/welsh_corgi_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/german_shepherd_icon" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLH_dogbreed4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed10"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/bull_terrier_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed11"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/bullmastiff_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed12"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/bully_dog_icon" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLH_dogbreed5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed13"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/chihuahua_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed14"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/chihuahua_icon2" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed15"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/french_bulldog_icon" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLH_dogbreed6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed16"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/tricolor_corgi_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed17"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed17"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/golden_retriever_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed18"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/jack_russell_terrier_icon" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLH_dogbreed7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed19"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed19"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/miniature_schnauzer_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed20"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed20"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/pitbull_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed21"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed21"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/shih_tzu_icon" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLH_dogbreed8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed22"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/siberian_husky_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CV_dogbreed_viewmore"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="2dp"
+                    app:cardCornerRadius="200dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/IV_dogbreed_viewmore"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/viewmore" />
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="50dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SV_select_breed"
+        app:srcCompat="@drawable/back_arrow2" />
+
+    <LinearLayout
+        android:id="@+id/LLH_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/profilebar_brown"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/SV_select_breed"
+        tools:layout_editor_absoluteX="2dp">
+
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/home_brown" />
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_friends"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/friends_brown" />
+
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_reminders"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/reminders_brown" />
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/dogprofile_brown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLH_navigation_bar_names"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/light_brown"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLH_navigation_bar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_home"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:text="@string/navigation_icon_home"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_friends"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="@string/navigation_icon_friends"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_reminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="@string/navigation_icon_reminders"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_profile"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="@string/navigation_icon_profile"
+            android:textColor="@color/dark_brown" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

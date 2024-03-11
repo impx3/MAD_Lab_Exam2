@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp9"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/TV_create_post"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_yellow" />
+
+    <TextView
+        android:id="@+id/TV_create_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/create_post"
+        android:textColor="@color/yellow"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LLH_post_title"
+        android:layout_width="380dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editext_signup_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_create_post">
+
+        <TextView
+            android:id="@+id/TV_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/post_title"
+            android:textColor="@color/dark_brown"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/ET_post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/new_post_title"
+            android:textColor="@color/light_brown"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLH_post_description"
+        android:layout_width="380dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/editext_signup_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLH_post_title">
+
+        <TextView
+            android:id="@+id/TV_post_description"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/post_description"
+            android:textColor="@color/dark_brown"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/ET_post_description"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginStart="15dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/new_post_description"
+            android:textColor="@color/light_brown"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Btn_create_post"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/editext_signup_background"
+        android:text="Create post"
+        android:textColor="@color/dark_brown"
+        app:layout_constraintBottom_toTopOf="@+id/LLH_navigation_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LLH_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/profilebar_brown"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="630dp">
+
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/home_brown" />
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_friends"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/friends_brown" />
+
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_reminders"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/reminders_brown" />
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/dogprofile_brown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLH_navigation_bar_names"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/light_brown"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLH_navigation_bar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_home"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:text="@string/navigation_icon_home"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_friends"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="@string/navigation_icon_friends"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_reminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="@string/navigation_icon_reminders"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_profile"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="@string/navigation_icon_profile"
+            android:textColor="@color/dark_brown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLH_viewing_permissions"
+        android:layout_width="380dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/editext_signup_background"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_create_post"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLH_post_description"
+        app:layout_constraintVertical_bias="0.28">
+
+
+        <Switch
+            android:id="@+id/switch_allow_users"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="14dp"
+            android:text="@string/allow_users"
+            android:textColor="@color/dark_brown"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/switch_allow_professionals"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="14dp"
+            android:text="@string/allow_professionals"
+            android:textColor="@color/dark_brown"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">1-4-pets</string>
+    <string name="slogan">For your pet...</string>
+    <string name="signup_message">Join with us now!</string>
+
+    <string name="signup">Sign Up</string>
+    <string name="signin_message">Have an account already?</string>
+    <string name="welcome_message">Welcome Back!</string>
+    <string name="sign_with_google">Or continue with</string>
+    <string name="sign_with_google_account_button">Google Account</string>
+
+    <string name="enter_email">Email</string>
+    <string name="enter_password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password_link">Forgot Password?</string>
+    <string name="signin">Sign In</string>
+    <string name="login_button">Log In</string>
+    <string name="dont_have_account_message">Don't have an account?</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="dog1_profile_age">2 years old</string>
+    <string name="dog1_profile_breed">Golden Retriever</string>
+    <string name="profile_name1_owner_name">Owned by Mark</string>
+    <string name="dog1_profile_gallery">Gallery</string>
+    <string name="logout_button">Log Out</string>
+
+    <string name="profile_name1">Remi</string>
+    <string name="profile_name2">Jasper</string>
+
+    <string name="select_dog_breed">Select breed</string>
+    <string name="search_dog_breed">Search</string>
+
+    <string name="reminders_page_title">Your reminders</string>
+    <string name="reminder1">Health Checkup</string>
+    <string name="reminder1_date">January 16</string>
+    <string name="reminder2">Go for a walk</string>
+    <string name="reminder2_date">January 18</string>
+    <string name="reminder3">Take medicine</string>
+    <string name="reminder3_date">January 20</string>
+
+    <string name="add_new_reminder">Add new reminder</string>
+    <string name="reminder_notify_toggle">Notify me</string>
+    <string name="enter_reminder_time">Reminder time</string>
+    <string name="enter_reminder_name">Reminder name</string>
+    <string name="enter_reminder_date">Reminder date</string>
+    <string name="add_reminder_button">Add Reminder</string>
+    <string name="view_reminders_button">View my Reminders</string>
+
+    <string name="view_profiles_title">Add friends...</string>
+    <string name="add_friend_dog_name1">Max</string>
+    <string name="add_friend_dog_name2">Bruno</string>
+    <string name="add_friend_dog_name3">Lassie</string>
+    <string name="add_friend_dog_name4">Jim</string>
+    <string name="add_friend_dog_name5">Marie</string>
+    <string name="add_friend_dog_name6">Benji</string>
+    <string name="my_friends_button">My Friends</string>
+
+    <string name="home_page_title">New posts</string>
+
+    <string name="create_post">Create new post</string>
+    <string name="post_title">Post title</string>
+    <string name="new_post_title">Enter title</string>
+    <string name="new_post_description">Enter description</string>
+    <string name="post_description">Post description</string>
+    <string name="allow_users">Allow users to view and comment</string>
+    <string name="allow_professionals">Allow professionals to view and comment</string>
+    <string name="create_post_button">Create post</string>
+
+    <string name="post1">Is my dog depressed?</string>
+    <string name="post1_date">16 January 2024</string>
+    <string name="post1_content">I have been noticing that my dog has lost interest in daily walks...</string>
+
+    <string name="post2">Skin problems</string>
+    <string name="post2_content">Excessive itching, licking and hair loss indicates that your dog has skin problems...</string>
+
+    <string name="post3">Where to check for ticks</string>
+    <string name="post3_content">It takes a tick anywhere from 3 to 24 hours of feeding to infect a dog...</string>
+
+    <string name="post4">Human food that are okay for dogs</string>
+    <string name="post4_content">Fruits like apple, banana, blueberries are considered to be safe...</string>
+
+    <string name="post1_comments">Comments</string>
+    <string name="post1_comment1_username">Michael Scofield</string>
+    <string name="post1_comment1_date">17 January 2024</string>
+
+    <string name="toggle_button_only_posts_by_professionals">By professionals</string>
+
+    <string name="post1_full">I have been noticing that my dog has lost interest in daily walks. He has lost interest in food and he does not seem happy. Is he depressed?</string>
+    <string name="comment">Look for more signs. If he shakes frequently, has a hanging head and dropped tail, your dog could be depressed. A change of environment or a death in your family might be the reason.</string>
+
+    <string name="friend_name">Pavel</string>
+    <string name="friend_chat_example_1">Good morning!</string>
+    <string name="friend_chat_example_2">How's Remi today?</string>
+    <string name="friend_chat_example_3">He's doing good. How's Lassie?</string>
+    <string name="friend_chat_example_4">She's a bit unwell. I will be taking her to the vet.</string>
+    <string name="chat_watermark_message">Message</string>
+
+    <string name="friend_profile_name">Lassie</string>
+    <string name="friend_profile_age">2 years old</string>
+    <string name="friend_profile_breed">Shetland Sheepdog</string>
+    <string name="friend_profile_owner_name">Owned by Pavel</string>
+    <string name="friend_profile_gallery">Gallery</string>
+    <string name="remove_friend_button">Remove Friend</string>
+
+    <string name="navigation_icon_home">Home</string>
+    <string name="navigation_icon_friends">Friends</string>
+    <string name="navigation_icon_reminders">Reminders</string>
+    <string name="navigation_icon_profile">Profile</string>
+
+</resources>

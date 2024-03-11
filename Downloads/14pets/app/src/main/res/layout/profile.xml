@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp10"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/TV_profile"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bac_arrow" />
+
+    <TextView
+        android:id="@+id/TV_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/profile_title"
+        android:textColor="@color/yellow"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CV_profile_pic"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/border"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="200dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TV_profile">
+
+        <ImageView
+            android:id="@+id/IV_profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/retriever" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/LLV_profile_info"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CV_profile_pic">
+
+        <EditText
+            android:id="@+id/ET_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/editext_signup_background"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="@string/profile_name1"
+            android:textColor="@color/dark_brown" />
+
+        <EditText
+            android:id="@+id/ET_age"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editext_signup_background"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="@string/dog1_profile_age"
+            android:textColor="@color/dark_brown" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/ET_breed"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/editext_signup_background"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="16dp"
+                android:text="@string/dog1_profile_breed"
+                android:textColor="@color/dark_brown"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/IV_arrow"
+                android:layout_width="29dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="210dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ET_breed"
+                app:srcCompat="@drawable/icons8_arrow"
+                tools:layout_editor_absoluteY="16dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/ET_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editext_signup_background"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="@string/profile_name1_owner_name"
+            android:textColor="@color/dark_brown" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/ET_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/editext_signup_background"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="16dp"
+                android:text="@string/dog1_profile_gallery"
+                android:textColor="@color/dark_brown"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/IV_arrow1"
+                android:layout_width="29dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@+id/ET_gallery"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icons8_arrow" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Btn_logout"
+        android:layout_width="119dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editext_signup_background"
+        android:padding="16dp"
+        android:text="@string/logout_button"
+        android:textColor="@color/dark_brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLV_profile_info" />
+
+    <LinearLayout
+        android:id="@+id/LLH_profiles"
+        android:layout_width="415dp"
+        android:layout_height="85dp"
+        android:background="@drawable/profilebar"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="630dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CV_profile1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/border"
+            app:cardCornerRadius="200dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <ImageView
+                android:id="@+id/IV_profile1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/retriever" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CV_profile2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/border"
+            app:cardCornerRadius="200dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/IV_profile2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/border_collie" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CV_add_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/border"
+            app:cardBackgroundColor="@color/light_brown"
+            app:cardCornerRadius="200dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/IV_add_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/add_icon2" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLH_Profile_names"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@color/yellow"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="703dp">
+
+        <TextView
+            android:id="@+id/TV_profile1_name"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="@string/profile_name1"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_profile2_name"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:text="@string/profile_name2"
+            android:textColor="@color/dark_brown" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

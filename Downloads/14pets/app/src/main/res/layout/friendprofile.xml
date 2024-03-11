@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wp10"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/chat_with_friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/CV_friend_profile_pic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chat" />
+
+    <LinearLayout
+        android:id="@+id/LLV_friend_profile_info"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CV_friend_profile_pic">
+
+        <EditText
+            android:id="@+id/ET_friend_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/editext_signup_background"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="@string/friend_profile_name"
+            android:textColor="@color/dark_brown" />
+
+        <EditText
+            android:id="@+id/ET_friend_age"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editext_signup_background"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="@string/friend_profile_age"
+            android:textColor="@color/dark_brown" />
+
+        <EditText
+            android:id="@+id/ET_friend_breed"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editext_signup_background"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="@string/friend_profile_breed"
+            android:textColor="@color/dark_brown" />
+
+        <EditText
+            android:id="@+id/ET_friend_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editext_signup_background"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="16dp"
+            android:text="@string/friend_profile_owner_name"
+            android:textColor="@color/dark_brown" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/ET_friend_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/editext_signup_background"
+                android:ems="10"
+                android:inputType="text"
+                android:padding="16dp"
+                android:text="@string/friend_profile_gallery"
+                android:textColor="@color/dark_brown"
+                tools:layout_editor_absoluteY="10dp" />
+
+            <ImageView
+                android:id="@+id/IV_arrow_gallery"
+                android:layout_width="29dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ET_friend_gallery"
+                app:layout_constraintHorizontal_bias="0.94"
+                app:layout_constraintStart_toStartOf="@+id/ET_friend_gallery"
+                app:layout_constraintTop_toTopOf="@+id/ET_friend_gallery"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/icons8_arrow" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CV_friend_profile_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="200dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/IV_friend_profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/shetland_sheepdog" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/Btn_remove_friend"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="116dp"
+        android:background="@drawable/editext_signup_background"
+        android:text="@string/remove_friend_button"
+        android:textColor="@color/dark_brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLV_friend_profile_info" />
+
+    <LinearLayout
+        android:id="@+id/LLH_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@drawable/profilebar_brown"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="630dp">
+
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_home"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/home_brown" />
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_friends"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/friends_brown" />
+
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_reminders"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/reminders_brown" />
+
+        <ImageView
+            android:id="@+id/IV_navigation_icon_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/dogprofile_brown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLH_navigation_bar_names"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/light_brown"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLH_navigation_bar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_home"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:text="@string/navigation_icon_home"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_friends"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:text="@string/navigation_icon_friends"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_reminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="@string/navigation_icon_reminders"
+            android:textColor="@color/dark_brown" />
+
+        <TextView
+            android:id="@+id/TV_navigation_icon_profile"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:text="@string/navigation_icon_profile"
+            android:textColor="@color/dark_brown" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="35dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bac_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
