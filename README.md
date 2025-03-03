@@ -1,0 +1,3 @@
+**1-4-Pets - Dog Wellness Mobile Application**
+
+Developed "1-4-Pets," a mobile app designed to enhance the wellness of dogs and connect pet owners. The app allows users to create detailed profiles for their pets, including their name, age, breed, gender, and photos to build a gallery. Users can also create individual profiles for multiple pets and interact with other pet owners in their community by adding friends, chatting, and scheduling playdates. The app includes features like reminders for tasks (feeding, walking, etc.), a calendar to track the pet's growth and health checkups, and the ability to make inquiries for professional advice. It provides a comprehensive solution for pet owners to manage and enjoy their pets' wellness journey.
